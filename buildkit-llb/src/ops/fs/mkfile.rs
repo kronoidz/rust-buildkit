@@ -10,6 +10,7 @@ use crate::serialization::{Context, Result};
 use crate::utils::OutputIdx;
 
 #[derive(Debug)]
+#[allow(dead_code)]
 pub struct MakeFileOperation<'a> {
     path: LayerPath<'a, PathBuf>,
     output: OutputIdx,
