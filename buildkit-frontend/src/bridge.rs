@@ -16,7 +16,7 @@ use buildkit_proto::moby::buildkit::v1::frontend::{
     ReturnRequest, SolveRequest,
 };
 
-pub use buildkit_llb::ops::source::{ImageSource, ResolveMode};
+pub use buildkit_llb::ops::source::ImageSource;
 pub use buildkit_llb::ops::Terminal;
 pub use buildkit_proto::moby::buildkit::v1::frontend::FileRange;
 
