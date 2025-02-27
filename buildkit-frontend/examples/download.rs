@@ -1,7 +1,7 @@
 use std::path::PathBuf;
 
 use async_trait::async_trait;
-use failure::Error;
+use anyhow::Error;
 use regex::Regex;
 use serde::Deserialize;
 use url::Url;

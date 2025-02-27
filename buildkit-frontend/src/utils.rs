@@ -1,6 +1,6 @@
 use std::fmt;
 
-use failure::Error;
+use anyhow::Error;
 
 #[derive(Clone, Debug)]
 pub struct OutputRef(pub(crate) String);
@@ -25,7 +25,7 @@ impl fmt::Display for ErrorWithCauses {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{}", self.0)?;
 
-        for cause in self.0.iter_causes() {
+        for cause in self.0.chain() {
             write!(f, "{}{}", self.1, cause)?;
         }
 

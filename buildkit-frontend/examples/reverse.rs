@@ -1,7 +1,7 @@
 use std::iter::once;
 
 use async_trait::async_trait;
-use failure::Error;
+use anyhow::Error;
 
 use buildkit_frontend::oci::*;
 use buildkit_frontend::run_frontend;

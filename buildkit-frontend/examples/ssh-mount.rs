@@ -1,5 +1,5 @@
 use async_trait::async_trait;
-use failure::{bail, Error};
+use anyhow::{bail, Error};
 
 use buildkit_frontend::oci::*;
 use buildkit_frontend::run_frontend;

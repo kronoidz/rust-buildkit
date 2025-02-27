@@ -1,7 +1,7 @@
 use std::io::Cursor;
 use std::iter::empty;
 
-use failure::Error;
+use anyhow::Error;
 use serde::de::value::{MapDeserializer, SeqDeserializer};
 use serde::de::{self, DeserializeOwned, IntoDeserializer, Visitor};
 use serde::forward_to_deserialize_any;

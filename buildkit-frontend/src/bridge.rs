@@ -2,7 +2,7 @@ use std::collections::HashMap;
 use std::path::PathBuf;
 use std::sync::Arc;
 
-use failure::{bail, format_err, Error, ResultExt};
+use anyhow::{Error, Context, format_err, bail};
 use log::*;
 use tokio::sync::Mutex;
 

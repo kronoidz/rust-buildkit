@@ -1,7 +1,7 @@
 #![deny(warnings)]
 #![deny(clippy::all)]
 
-use failure::{Error, ResultExt};
+use anyhow::{Error, Context};
 use log::*;
 use serde::de::DeserializeOwned;
 use tonic::transport::Endpoint;
