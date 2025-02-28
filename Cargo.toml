@@ -4,3 +4,4 @@ members = [
     "buildkit-llb",
     "buildkit-frontend",
 ]
+resolver = "2"

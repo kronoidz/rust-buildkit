@@ -58,7 +58,7 @@ where
     O: DeserializeOwned,
 {
     let channel = {
-        Endpoint::from_static("http://[::]:50051")
+        Endpoint::try_from("http://[::]:50051")?
             .connect_with_connector(service_fn(stdio_connector))
             .await?
     };

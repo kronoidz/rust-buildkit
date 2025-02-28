@@ -7,7 +7,7 @@ use buildkit_frontend::{Bridge, Frontend, FrontendOutput, Options, OutputRef};
 
 use buildkit_llb::prelude::*;
 
-#[tokio::main(basic_scheduler)]
+#[tokio::main]
 async fn main() {
     env_logger::init();
 

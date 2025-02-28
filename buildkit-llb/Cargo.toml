@@ -2,7 +2,7 @@
 name = "buildkit-llb"
 version = "0.2.0"
 authors = ["Denys Zariaiev <denys.zariaiev@gmail.com>"]
-edition = "2018"
+edition = "2021"
 
 description = "Idiomatic high-level API to create BuildKit LLB graphs"
 documentation = "https://docs.rs/buildkit-llb"
@@ -17,10 +17,10 @@ either = "1.5"
 anyhow = "1.0.96"
 lazy_static = "1"
 log = "0.4"
-prost = "0.6"
+prost = "0.13"
 regex = "1"
 serde_json = "1.0"
-sha2 = "0.8"
+sha2 = "0.10"
 
 [dependencies.buildkit-proto]
 version = "0.2"
